@@ -22,4 +22,4 @@ title: Awards
 - **University Outstanding Student**, 2021-2022  
 
 ### 📚 Research Recognition
-- **Accepted Paper** (Poster), *CCKS 2024* (National Conference on Knowledge Graph & Semantic Computing), 2024  
+- **Accepted Paper** (Poster), *CCKS 2025* (National Conference on Knowledge Graph & Semantic Computing), 2025  
