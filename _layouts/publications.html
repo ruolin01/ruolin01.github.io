@@ -1,0 +1,134 @@
+---
+layout: default
+---
+
+{% include home-header.html %}
+
+<h1>{{ page.title }}</h1>
+
+<div class="publications-wrapper">
+  {% for post in site.posts %}
+    {% if post.categories contains "publication" %}
+      <div class="publication-item">
+        {% if post.thumbnail %}
+        <div class="publication-thumbnail">
+          <img src="{{ post.thumbnail | relative_url }}" alt="{{ post.title }}">
+          {% if post.venue_tag %}
+          <div class="venue-tag">{{ post.venue_tag }}</div>
+          {% endif %}
+        </div>
+        {% endif %}
+        
+        <div class="publication-content">
+          <h2 class="publication-title">
+            <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+          </h2>
+          
+          {% if post.authors %}
+          <p class="publication-authors">{{ post.authors }}</p>
+          {% endif %}
+          
+          <div class="publication-links">
+            {% if post.project_page %}
+            <a href="{{ post.project_page }}" class="pub-link">[Project Page]</a>
+            {% endif %}
+            
+            {% if post.paper_link %}
+            <a href="{{ post.paper_link }}" class="pub-link">[Paper]</a>
+            {% endif %}
+            
+            {% if post.code_link %}
+            <a href="{{ post.code_link }}" class="pub-link">[Code]</a>
+            {% endif %}
+            
+            {% if post.video_link %}
+            <a href="{{ post.video_link }}" class="pub-link">[Video]</a>
+            {% endif %}
+            
+            {% if post.research_note %}
+            <a href="{{ post.research_note }}" class="pub-link">[研究之心 ❤️]</a>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    {% endif %}
+  {% endfor %}
+</div>
+
+<style>
+  .publications-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .publication-item {
+    display: flex;
+    gap: 1.5rem;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 2rem;
+  }
+  
+  .publication-thumbnail {
+    flex: 0 0 auto;
+    width: 200px;
+    position: relative;
+  }
+  
+  .publication-thumbnail img {
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid #eee;
+  }
+  
+  .venue-tag {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #0366d6;
+    color: white;
+    padding: 0.2rem 0.5rem;
+    font-size: 0.8rem;
+    border-top-left-radius: 4px;
+  }
+  
+  .publication-content {
+    flex: 1;
+    width: 70%;
+  }
+  
+  .publication-title {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+  }
+  
+  .publication-authors {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    color: #555;
+  }
+  
+  .publication-links {
+    margin-top: 1rem;
+  }
+  
+  .pub-link {
+    margin-right: 0.5rem;
+    text-decoration: none;
+  }
+</style>
+
+<script>
+  function backToTop() {
+    const main = document.getElementById("site-main");
+    main.scrollTop = 0;
+  }
+</script>
+
+<!-- 隐藏dates和tags -->
+<style>
+  .sidebar-right {
+    display: none !important;
+  }
+</style>

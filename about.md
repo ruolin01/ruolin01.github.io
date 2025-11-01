@@ -2,7 +2,14 @@
 layout: page
 title: About
 ---
+  
+   
+✨ Hi there! I’m **Ruolin Su**, a first-year M.S. student at **DM-Lab-ECNU**, East China Normal University (ECNU), advised by Prof. **Junjie Yao**. I received my Bachelor’s degree from Hefei University of Technology.
 
-**Not Pure Poole** is a simple, beautiful, and powerful Jekyll theme for blogs. It is built on [Poole](https://github.com/poole/poole) and [Pure](https://purecss.io/).
+My research interests lie in **large language model reasoning, knowledge engineering, and LLM applications**. I am currently exploring Retrieval-Augmented Generation (RAG) to build reliable and interpretable AI systems.
 
-For more information about Not Pure Poole, please browse the [README](https://github.com/vszhub/not-pure-poole) file.
+**I am open to research collaboration and academic exchange. Please do not hesitate to contact me.**
+
+📫Email: suruolin62@gmail.com
+
+📫Email: suruolin001@163.com

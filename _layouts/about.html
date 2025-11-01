@@ -1,0 +1,9 @@
+---
+layout: default
+---
+
+<article class="page">
+  <h1 class="page-title">About</h1>
+  {% assign about_page = site.pages | where: "name", "about.md" | first %}
+  {{ about_page.content }}
+</article>
