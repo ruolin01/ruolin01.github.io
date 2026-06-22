@@ -10,7 +10,7 @@ My research interests lie in **large language model reasoning, retrieval-augment
 
 🔭 **Selected work**
 - **SignPost** — a materialized action interface for agentic Graph RAG *(under submission to ICDE 2027)*. [[code]](https://github.com/dm-ecnu/signpost)
-- **PsyFusion-RAG** — multi-source heterogeneous knowledge-fusion RAG for psychological dialogue *(first author; accepted, Journal of Chinese Information Processing, CCF Chinese core)*.
+- **PsyFusion-RAG** — multi-source knowledge-fusion RAG for psychological dialogue *(first author; published, Journal of Chinese Information Processing, Vol. 40(5), 2026, CCF Chinese core)*. [[paper]](http://jcip.cipsc.org.cn/cn/article/pdf/preview/10.3969/j.issn.1003-0077.2026.05.014.pdf)
 - **GNN- & cvxpylayer-based indoor layout generation** — edge classification with GraphSAGE/GAT + differentiable convex optimization. [[code]](https://github.com/suruolin1/GNN_edge_classification)
 
 **I am open to research collaboration and academic exchange. Please do not hesitate to contact me.**
