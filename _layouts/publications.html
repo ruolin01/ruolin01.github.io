@@ -4,7 +4,7 @@ layout: default
 
 {% include home-header.html %}
 
-<h1>{{ page.title }}</h1>
+<h1><span class="lang-en">{{ page.title }}</span><span class="lang-zh">{{ page.title_zh | default: page.title }}</span></h1>
 
 <div class="publications-wrapper">
   {% for post in site.posts %}
@@ -14,14 +14,14 @@ layout: default
         <div class="publication-thumbnail">
           <img src="{{ post.thumbnail | relative_url }}" alt="{{ post.title }}">
           {% if post.venue_tag %}
-          <div class="venue-tag">{{ post.venue_tag }}</div>
+          <div class="venue-tag"><span class="lang-en">{{ post.venue_tag }}</span><span class="lang-zh">{{ post.venue_tag_zh | default: post.venue_tag }}</span></div>
           {% endif %}
         </div>
         {% endif %}
         
         <div class="publication-content">
           <h2 class="publication-title">
-            <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+            <a href="{{ post.url | relative_url }}"><span class="lang-en">{{ post.title | escape }}</span><span class="lang-zh">{{ post.title_zh | default: post.title | escape }}</span></a>
           </h2>
           
           {% if post.authors %}
@@ -30,19 +30,19 @@ layout: default
           
           <div class="publication-links">
             {% if post.project_page %}
-            <a href="{{ post.project_page }}" class="pub-link">[Project Page]</a>
+            <a href="{{ post.project_page }}" class="pub-link"><span class="lang-en">[Project Page]</span><span class="lang-zh">[项目主页]</span></a>
             {% endif %}
             
             {% if post.paper_link %}
-            <a href="{{ post.paper_link }}" class="pub-link">[Paper]</a>
+            <a href="{{ post.paper_link }}" class="pub-link"><span class="lang-en">[Paper]</span><span class="lang-zh">[论文]</span></a>
             {% endif %}
             
             {% if post.code_link %}
-            <a href="{{ post.code_link }}" class="pub-link">[Code]</a>
+            <a href="{{ post.code_link }}" class="pub-link"><span class="lang-en">[Code]</span><span class="lang-zh">[代码]</span></a>
             {% endif %}
             
             {% if post.video_link %}
-            <a href="{{ post.video_link }}" class="pub-link">[Video]</a>
+            <a href="{{ post.video_link }}" class="pub-link"><span class="lang-en">[Video]</span><span class="lang-zh">[视频]</span></a>
             {% endif %}
             
             {% if post.research_note %}

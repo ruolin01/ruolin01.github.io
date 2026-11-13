@@ -1,6 +1,43 @@
-{% comment %}
-  Placeholder to allow defining custom head, in principle, you can add anything here, e.g. favicons:
+{%- comment -%}
+  Bilingual (EN / 中文) switch.
+  Every translatable piece of text is written twice: class="lang-en" and class="lang-zh".
+  The <html data-lang> attribute decides which one is visible. The choice is remembered in localStorage.
+  Priority: ?lang=zh|en in the URL > saved choice > browser language (zh* -> 中文, otherwise English).
+{%- endcomment -%}
+<script>
+  (function () {
+    var l = null;
+    try { l = new URLSearchParams(location.search).get('lang') || localStorage.getItem('lang'); } catch (e) {}
+    if (l !== 'zh' && l !== 'en') {
+      l = ((navigator.language || '') + '').toLowerCase().indexOf('zh') === 0 ? 'zh' : 'en';
+    }
+    document.documentElement.setAttribute('data-lang', l);
+    document.documentElement.lang = (l === 'zh') ? 'zh-CN' : 'en';
+  })();
+  function setLang(l) {
+    document.documentElement.setAttribute('data-lang', l);
+    document.documentElement.lang = (l === 'zh') ? 'zh-CN' : 'en';
+    try { localStorage.setItem('lang', l); } catch (e) {}
+  }
+</script>
+<style>
+  html:not([data-lang="zh"]) .lang-zh { display: none !important; }
+  html[data-lang="zh"] .lang-en { display: none !important; }
 
-  1. Head over to https://realfavicongenerator.net/ to add your own favicons.
-  2. Customize default _includes/custom-head.html in your source directory and insert the given code snippet.
-{% endcomment %}
+  .lang-switch { margin-top: 0.8rem; font-size: 0.9rem; letter-spacing: 0.05em; }
+  .lang-switch button {
+    background: transparent; border: 0; padding: 0 0.3rem; margin: 0;
+    color: inherit; font: inherit; cursor: pointer; opacity: 0.6;
+  }
+  .lang-switch button:hover, .lang-switch button:focus { opacity: 1; }
+  html:not([data-lang="zh"]) .lang-switch button[data-set="en"],
+  html[data-lang="zh"] .lang-switch button[data-set="zh"] {
+    opacity: 1; font-weight: 700; border-bottom: 2px solid;
+  }
+
+  .project-video {
+    display: block; width: 100%; max-width: 720px; margin: 1rem 0 1.5rem;
+    border-radius: 6px; background: #000;
+  }
+  .video-caption { font-size: 0.85rem; color: #777; margin-top: -1rem; margin-bottom: 1.5rem; }
+</style>

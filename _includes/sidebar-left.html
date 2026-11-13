@@ -10,17 +10,22 @@
     </div>
   {%- endif %}
   <div class="masthead-title">
-    <a href="{{ "/" | relative_url }}" title="Home">{{ site.title }}</a>
+    <a href="{{ "/" | relative_url }}" title="Home"><span class="lang-en">{{ site.title }}</span><span class="lang-zh">{{ site.title_zh | default: site.title }}</span></a>
   </div>
   <div class="masthead-tagline">
     <small>{{ site.description }}</small>
+  </div>
+  <div class="lang-switch" role="group" aria-label="Language / 语言">
+    <button type="button" data-set="en" onclick="setLang('en')">EN</button>
+    <span aria-hidden="true">/</span>
+    <button type="button" data-set="zh" onclick="setLang('zh')">中文</button>
   </div>
   {%- if site.data.navigation -%}
   <nav class="navigation">
     <ul class="navigation-list">
     {%- for nav in site.data.navigation -%}
       <li class="navigation-item">
-        <a onclick="sessionStorage.setItem('forceCheckScroll', 'true')" href="{{ nav.url | relative_url }}">{{ nav.title | escape }}</a>
+        <a onclick="sessionStorage.setItem('forceCheckScroll', 'true')" href="{{ nav.url | relative_url }}"><span class="lang-en">{{ nav.title | escape }}</span><span class="lang-zh">{{ nav.title_zh | default: nav.title | escape }}</span></a>
       </li>
     {%- endfor -%}
     </ul>

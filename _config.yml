@@ -1,6 +1,7 @@
 # Setup
 title: Ruolin Su
-description: Focusing on large language model reasoning.
+title_zh: 苏若琳
+description: RAG / GraphRAG / AgenticRAG
 url: https://ruolin01.github.io
 avatar: /avatar.jpeg
 paginate: 5

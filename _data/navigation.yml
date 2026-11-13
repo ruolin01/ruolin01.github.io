@@ -1,8 +1,12 @@
 - title: About
+  title_zh: 关于
   url: /about/
 - title: Publications
+  title_zh: 论文
   url: /publications/
 - title: Awards
+  title_zh: 奖项
   url: /awards/
 - title: Experience
+  title_zh: 经历
   url: /experience/
