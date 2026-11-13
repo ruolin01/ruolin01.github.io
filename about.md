@@ -20,6 +20,13 @@ My research interests lie in **RAG, GraphRAG, and Agentic RAG**, with the goal o
 
 - **Huanjing Guanfang (幻境观房): Intelligent Floor-Plan Generation & Walkthrough System** *(project lead)* — recognizes the layout of a 2D floor plan with deep learning, reconstructs it in 3D via corner extraction and face meshing, and wraps first-person walkthrough and furniture arrangement in Unity. Won the **National Third Prize** at the 2023 China University Computer Contest – AI Creative Contest (top 1.5% nationwide, ranked first on the team).
 
+  <figure class="project-figure">
+    <video class="project-video" controls preload="metadata" playsinline poster="{{ '/assets/videos/huanjing-poster.jpg' | relative_url }}">
+      <source src="{{ '/assets/videos/huanjing.mp4' | relative_url }}" type="video/mp4">
+    </video>
+    <figcaption>Demo video: Huanjing Guanfang</figcaption>
+  </figure>
+
 </div>
 
 <div class="lang-zh" markdown="1">
@@ -38,12 +45,14 @@ My research interests lie in **RAG, GraphRAG, and Agentic RAG**, with the goal o
 
 - **幻境观房：智能户型生成与漫游系统** *（项目负责人）* — 基于深度学习识别二维户型图的布局，经角点提取与面片网格完成三维重建，再以 Unity 封装第一人称漫游与家具布置；获 2023 中国高校计算机大赛人工智能创意赛**国家级三等奖**（全国前 1.5%，个人第一）。
 
-</div>
+  <figure class="project-figure">
+    <video class="project-video" controls preload="metadata" playsinline poster="{{ '/assets/videos/huanjing-poster.jpg' | relative_url }}">
+      <source src="{{ '/assets/videos/huanjing.mp4' | relative_url }}" type="video/mp4">
+    </video>
+    <figcaption>演示视频：幻境观房</figcaption>
+  </figure>
 
-<video class="project-video" controls preload="metadata" playsinline poster="{{ '/assets/videos/huanjing-poster.jpg' | relative_url }}">
-  <source src="{{ '/assets/videos/huanjing.mp4' | relative_url }}" type="video/mp4">
-</video>
-<p class="video-caption"><span class="lang-en">Demo video: Huanjing Guanfang</span><span class="lang-zh">演示视频：幻境观房</span></p>
+</div>
 
 📫 Email: suruolin62@gmail.com
 
