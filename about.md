@@ -12,7 +12,6 @@ My research interests lie in **RAG, GraphRAG, and Agentic RAG**, with the goal o
 
 🔭 **Selected work**
 - **PsyFusion-RAG** — multi-source knowledge-fusion RAG for psychological dialogue *(first author; published, Journal of Chinese Information Processing, Vol. 40(5), 2026, CCF Chinese core)*. [[paper]](http://jcip.cipsc.org.cn/cn/article/pdf/preview/10.3969/j.issn.1003-0077.2026.05.014.pdf)
-- **GNN- & cvxpylayer-based indoor layout generation** — edge classification with GraphSAGE/GAT + differentiable convex optimization. [[code]](https://github.com/suruolin1/GNN_edge_classification)
 - **Huanjing Guanfang (幻境观房): Intelligent Floor-Plan Generation & Walkthrough System** *(project lead)* — recognizes the layout of a 2D floor plan with deep learning, reconstructs it in 3D via corner extraction and face meshing, and wraps first-person walkthrough and furniture arrangement in Unity. Won the **National Third Prize** at the 2023 China University Computer Contest – AI Creative Contest (top 1.5% nationwide, ranked first on the team).
 
 </div>
@@ -25,7 +24,6 @@ My research interests lie in **RAG, GraphRAG, and Agentic RAG**, with the goal o
 
 🔭 **代表工作**
 - **PsyFusion-RAG** — 面向心理对话的多源知识融合 RAG *（第一作者；已发表于《中文信息学报》2026 年第 40 卷第 5 期，CCF 中文核心）*。[[论文]](http://jcip.cipsc.org.cn/cn/article/pdf/preview/10.3969/j.issn.1003-0077.2026.05.014.pdf)
-- **基于 GNN 与 cvxpylayer 的室内户型生成** — 用 GraphSAGE/GAT 做边分类，结合可微凸优化。[[代码]](https://github.com/suruolin1/GNN_edge_classification)
 - **幻境观房：智能户型生成与漫游系统** *（项目负责人）* — 基于深度学习识别二维户型图的布局，经角点提取与面片网格完成三维重建，再以 Unity 封装第一人称漫游与家具布置；获 2023 中国高校计算机大赛人工智能创意赛**国家级三等奖**（全国前 1.5%，个人第一）。
 
 </div>
